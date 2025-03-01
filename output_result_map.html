@@ -1,0 +1,380 @@
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_cd454dd9364d8c5b517ca86b7a32eb80 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_cd454dd9364d8c5b517ca86b7a32eb80&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_cd454dd9364d8c5b517ca86b7a32eb80 = L.map(
+                &quot;map_cd454dd9364d8c5b517ca86b7a32eb80&quot;,
+                {
+                    center: [40.75701215, -73.98597092538824],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 15,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_afcb88674d58a3452447e5979a26dd1a = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_afcb88674d58a3452447e5979a26dd1a.addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var marker_3feb6084cc549ccb1633462dfa577fa0 = L.marker(
+                [40.75701215, -73.98597092538824],
+                {
+}
+            ).addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var icon_c72ee38cf033928d4872c0e0262d683a = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_3feb6084cc549ccb1633462dfa577fa0.setIcon(icon_c72ee38cf033928d4872c0e0262d683a);
+        
+    
+            marker_3feb6084cc549ccb1633462dfa577fa0.bindTooltip(
+                `&lt;div&gt;
+                     Times Square, New York
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_7fabe105a691d76803ca701aa0289bef = L.marker(
+                [40.761482150000006, -73.98756399166246],
+                {
+}
+            ).addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var icon_97d1e9f9c0c5b39a3ad82cad8e19e560 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_7fabe105a691d76803ca701aa0289bef.setIcon(icon_97d1e9f9c0c5b39a3ad82cad8e19e560);
+        
+    
+            marker_7fabe105a691d76803ca701aa0289bef.bindTooltip(
+                `&lt;div&gt;
+                     Emmy Squared Pizza
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+
+        function geo_json_af4e99c497a79a0eababba16821221c0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_af4e99c497a79a0eababba16821221c0 = L.geoJson(null, {
+                onEachFeature: geo_json_af4e99c497a79a0eababba16821221c0_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_af4e99c497a79a0eababba16821221c0_add (data) {
+            geo_json_af4e99c497a79a0eababba16821221c0
+                .addData(data);
+        }
+            geo_json_af4e99c497a79a0eababba16821221c0_add({&quot;coordinates&quot;: [[-73.985964, 40.75701], [-73.985869, 40.757201], [-73.985829, 40.757266], [-73.985792, 40.757327], [-73.985451, 40.757847], [-73.985435, 40.757867], [-73.985417, 40.757914], [-73.985399, 40.75796], [-73.985391, 40.757971], [-73.985378, 40.757989], [-73.985408, 40.758002], [-73.985482, 40.758036], [-73.985578, 40.758079], [-73.98562, 40.758092], [-73.985647, 40.7581], [-73.985678, 40.75811], [-73.985462, 40.758671], [-73.985454, 40.758692], [-73.985435, 40.758743], [-73.985417, 40.758791], [-73.985413, 40.758804], [-73.985228, 40.7594], [-73.985224, 40.759415], [-73.985207, 40.759466], [-73.985191, 40.75951], [-73.985187, 40.759524], [-73.984976, 40.760079], [-73.984968, 40.760097], [-73.984959, 40.76012], [-73.984943, 40.760165], [-73.984923, 40.760218], [-73.984917, 40.760235], [-73.985356, 40.760429], [-73.986834, 40.761051], [-73.986968, 40.761105], [-73.987117, 40.761159], [-73.98764, 40.761379]], &quot;type&quot;: &quot;LineString&quot;});
+        geo_json_af4e99c497a79a0eababba16821221c0.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_af4e99c497a79a0eababba16821221c0.addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var marker_682539a14d25a6fa6fa2f27a1c3257f3 = L.marker(
+                [40.7582345, -73.9884017],
+                {
+}
+            ).addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var icon_b3037118288bcec9a23293e14d1afa04 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_682539a14d25a6fa6fa2f27a1c3257f3.setIcon(icon_b3037118288bcec9a23293e14d1afa04);
+        
+    
+            marker_682539a14d25a6fa6fa2f27a1c3257f3.bindTooltip(
+                `&lt;div&gt;
+                     John&#x27;s of Times Square
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+
+        function geo_json_5f98f43427eff2139cf61aae8b227966_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5f98f43427eff2139cf61aae8b227966 = L.geoJson(null, {
+                onEachFeature: geo_json_5f98f43427eff2139cf61aae8b227966_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_5f98f43427eff2139cf61aae8b227966_add (data) {
+            geo_json_5f98f43427eff2139cf61aae8b227966
+                .addData(data);
+        }
+            geo_json_5f98f43427eff2139cf61aae8b227966_add({&quot;coordinates&quot;: [[-73.985964, 40.75701], [-73.985869, 40.757201], [-73.985909, 40.757217], [-73.985958, 40.757236], [-73.985966, 40.75724], [-73.986056, 40.757279], [-73.986106, 40.757302], [-73.986146, 40.757324], [-73.986198, 40.757353], [-73.988376, 40.758269]], &quot;type&quot;: &quot;LineString&quot;});
+        geo_json_5f98f43427eff2139cf61aae8b227966.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_5f98f43427eff2139cf61aae8b227966.addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var marker_b5f5334b23503d1aea38d506ae18d94a = L.marker(
+                [40.75704473469388, -73.98358485714286],
+                {
+}
+            ).addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var icon_c14f13e3ff70d7ddbb2652b870abe36c = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_b5f5334b23503d1aea38d506ae18d94a.setIcon(icon_c14f13e3ff70d7ddbb2652b870abe36c);
+        
+    
+            marker_b5f5334b23503d1aea38d506ae18d94a.bindTooltip(
+                `&lt;div&gt;
+                     Patzeria Perfect Pizza
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+
+        function geo_json_a4a74ccf3af8b99ed4b329cdb3de946f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a4a74ccf3af8b99ed4b329cdb3de946f = L.geoJson(null, {
+                onEachFeature: geo_json_a4a74ccf3af8b99ed4b329cdb3de946f_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_a4a74ccf3af8b99ed4b329cdb3de946f_add (data) {
+            geo_json_a4a74ccf3af8b99ed4b329cdb3de946f
+                .addData(data);
+        }
+            geo_json_a4a74ccf3af8b99ed4b329cdb3de946f_add({&quot;coordinates&quot;: [[-73.985964, 40.75701], [-73.985869, 40.757201], [-73.985829, 40.757266], [-73.985792, 40.757327], [-73.985451, 40.757847], [-73.985401, 40.757827], [-73.983574, 40.757059]], &quot;type&quot;: &quot;LineString&quot;});
+        geo_json_a4a74ccf3af8b99ed4b329cdb3de946f.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_a4a74ccf3af8b99ed4b329cdb3de946f.addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var marker_5c3fc9bcdf9cdaefb6d1f08c32f7a4e5 = L.marker(
+                [40.756328749999994, -73.9803339324252],
+                {
+}
+            ).addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var icon_025371e945295fdd63c0a056cf10012c = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_5c3fc9bcdf9cdaefb6d1f08c32f7a4e5.setIcon(icon_025371e945295fdd63c0a056cf10012c);
+        
+    
+            marker_5c3fc9bcdf9cdaefb6d1f08c32f7a4e5.bindTooltip(
+                `&lt;div&gt;
+                     Carnegie Pizza
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+
+        function geo_json_66b5fb5828e642034f5942c36e13c3db_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_66b5fb5828e642034f5942c36e13c3db = L.geoJson(null, {
+                onEachFeature: geo_json_66b5fb5828e642034f5942c36e13c3db_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_66b5fb5828e642034f5942c36e13c3db_add (data) {
+            geo_json_66b5fb5828e642034f5942c36e13c3db
+                .addData(data);
+        }
+            geo_json_66b5fb5828e642034f5942c36e13c3db_add({&quot;coordinates&quot;: [[-73.985964, 40.75701], [-73.985869, 40.757201], [-73.985759, 40.757158], [-73.985722, 40.757144], [-73.984083, 40.756453], [-73.983339, 40.756138], [-73.983208, 40.756086], [-73.983076, 40.756033], [-73.983037, 40.756087], [-73.983, 40.75614], [-73.982619, 40.756652], [-73.982573, 40.756714], [-73.982532, 40.756769], [-73.982173, 40.757266], [-73.981526, 40.757002], [-73.980236, 40.756462]], &quot;type&quot;: &quot;LineString&quot;});
+        geo_json_66b5fb5828e642034f5942c36e13c3db.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_66b5fb5828e642034f5942c36e13c3db.addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var marker_0bd53d749cfcf97616225dc90b34dc54 = L.marker(
+                [40.7568738, -73.98439672942493],
+                {
+}
+            ).addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+    
+            var icon_dd2caac4e431bdc3969c8f85ea5304d6 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+            marker_0bd53d749cfcf97616225dc90b34dc54.setIcon(icon_dd2caac4e431bdc3969c8f85ea5304d6);
+        
+    
+            marker_0bd53d749cfcf97616225dc90b34dc54.bindTooltip(
+                `&lt;div&gt;
+                     Carmine&#x27;s - Time Square
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+
+        function geo_json_c74747547268c7968239c027beebcb21_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c74747547268c7968239c027beebcb21 = L.geoJson(null, {
+                onEachFeature: geo_json_c74747547268c7968239c027beebcb21_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_c74747547268c7968239c027beebcb21_add (data) {
+            geo_json_c74747547268c7968239c027beebcb21
+                .addData(data);
+        }
+            geo_json_c74747547268c7968239c027beebcb21_add({&quot;coordinates&quot;: [[-73.985964, 40.75701], [-73.985869, 40.757201], [-73.985829, 40.757266], [-73.985792, 40.757327], [-73.985697, 40.757286], [-73.98566, 40.75727], [-73.984473, 40.75677]], &quot;type&quot;: &quot;LineString&quot;});
+        geo_json_c74747547268c7968239c027beebcb21.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_c74747547268c7968239c027beebcb21.addTo(map_cd454dd9364d8c5b517ca86b7a32eb80);
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
